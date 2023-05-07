@@ -1,3 +1,5 @@
+// I know the type better than TS 
+
 let emni: any;
 emni = "I am the next level web developer";
 (emni as string)

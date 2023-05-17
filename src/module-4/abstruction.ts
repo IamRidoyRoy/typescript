@@ -65,3 +65,13 @@ class Car extends MyVehicle2 {
 // We can't directly create instance from the abstruct class
 //  but we can do it by child class
 const vehicle2 = new Car('Car', 'Toyota', 2022)
+
+
+// Difference between abstract vs Interface
+// - when we use interface we have use all methods or variable which is inside of interface
+// - but when we use abstract class and abstract methods we don't have to use all methods.
+//   we have must use only abstract methods
+
+
+// Encapsulation
+// - when we used private and protected property and hide something that was Encapsulation 

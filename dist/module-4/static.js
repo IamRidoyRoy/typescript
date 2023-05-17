@@ -1,16 +1,15 @@
 "use strict";
 class Counter {
-    constructor(count) {
-        this.count = count;
+    static increment() {
+        return Counter.count = Counter.count + 1;
     }
-    increment() {
-        return this.count = this.count + 1;
-    }
-    decrement() {
-        return this.count = this.count - 1;
+    static decrement() {
+        return Counter.count = Counter.count - 1;
     }
 }
-const instance1 = new Counter(0);
-const instance2 = new Counter(1);
-console.log(instance1.increment());
-console.log(instance1.increment());
+Counter.count = 0;
+// const instance1 = new Counter();
+// const instance2 = new Counter();
+// As we make all static so we have to acces the static value using class 
+console.log(Counter.increment());
+console.log(Counter.increment());
